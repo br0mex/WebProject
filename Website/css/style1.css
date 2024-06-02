@@ -1,0 +1,864 @@
+:root {
+    --font_Popins: 'popins', sans-serif;
+    --font_SansSerif: SansSerif;
+    --display_flex: flex;
+    --full_width: 100%;
+}
+html   {
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    .function, .function li ,.function a , .function ul, .hide ,.show{
+        display: none;
+    }
+    .left .btn_left {
+        width: 160px;
+    }
+    header {
+        font-family: var(--font_Popins);
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        width: var(--full_width);
+    }
+
+    .sponsor {
+        display: var(--display_flex);
+        justify-content: center;
+        margin-left: -100px;
+        width: var(--full_width);
+    }
+
+    .social_media {
+
+        margin-left: 1200px;
+        margin-top: -180px;
+
+        width: 310px;
+        padding-bottom: 70px;
+        padding-right: 90px;
+        display: block;
+
+
+    }
+
+    .social {
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+
+    }
+
+    .social_media img {
+        width: 35px;
+        margin-right: 20px;
+    }
+
+    .contacts {
+        margin-top: -20px;
+        display: var(--display_flex);
+        align-self: flex-end;
+
+
+    }
+
+    .contacts h5 {
+        color: #D4CDEF;
+        padding-right: 10px;
+
+        font-size: 15px;
+    }
+
+    .by_DeFiPie {
+        font-size: 62px;
+        color: #23155B;
+    }
+
+    main {
+        padding-left: 200px;
+        padding-bottom: 100px;
+    }
+
+    footer {
+        display: var(--display_flex);
+        flex-direction: column;
+        background: #23155B;
+        margin: -8px;
+        border-radius: 350px 0px 0px;
+        width: auto
+    }
+
+    .forms {
+
+        margin-left: -700px;
+        padding: 100px;
+        display: var(--display_flex);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .joinToVC h1 {
+        margin-bottom: 50px;
+    }
+
+    .joinToVC {
+        margin-bottom: 20px;
+        padding-bottom: 100px /* Добавляем отступ между joinToVC и text_area */
+    }
+
+    .text_area {
+        display: var(--display_flex);
+        max-width: 1000px;
+        margin-left: 600px;
+        color: #D4CDEF;
+        font-size: 15px;
+        align-items: flex-start;
+    }
+
+    .text_area form {
+        width: 300px;
+        margin-bottom: 20px; /* Добавляем отступ между формами */
+        margin-right: 200px;
+    }
+
+    .text_area input {
+        width: 400px; /* Ширина формы: 50% минус отступ в 10 пикселей */
+        border-radius: 15px;
+
+        padding: 20px;
+    }
+
+    .text_area label {
+        display: block; /* Для вывода текста над полем ввода */
+        margin-bottom: 5px; /* Отступ между текстом и полем ввода */
+    }
+
+    .joinToVC p {
+        font-family: var(--font_Popins);
+        margin-bottom: -50px;
+        width: 400px;
+        color: #FFFFFF;
+        font-size: 52px;
+    }
+
+    .text-colored-gray {
+        color: #D4CDEF;
+        font-size: 18px;
+    }
+
+    .about {
+        font-family: var(--font_SansSerif);
+        margin: 0px auto;
+        font-size: 18px;
+        color: #23155B;
+        width: 1400px;
+        padding-top: 100px;
+        font-size: 18px;
+        color: #23155B;
+
+    }
+
+    .about__img img {
+        margin-left: -17%;
+        border-radius: 40px;
+        float: left;
+    }
+
+    .funding_list {
+        list-style-type: none;
+        padding: 0;
+        display: var(--display_flex);
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .funding_list li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .position {
+        position: relative;
+
+    }
+
+    .position__projects {
+        width: 1200px;
+
+    }
+
+    .position__investors {
+        width: 1200px;
+
+    }
+
+    .left {
+        margin-left: -320px;
+        max-width: 1000px
+    }
+
+    .pleft {
+        margin-left: -410px;
+        float: left;
+    }
+
+    .sponsor img {
+        width: 240px;
+    }
+
+    .container {
+        width: 1200px;
+        justify-content: flex-start;
+        margin-left: 0px;
+        height: 80px;
+    }
+
+    .tittle {
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: var(--full_width);
+        color: #23155B;
+    }
+
+    .menu_list ul,
+    .sponsor ul,
+    .funding ul {
+        list-style-type: none;
+        display: var(--display_flex);
+        float: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: #23155B;
+    }
+
+    .logo {
+        width: 200px;
+        float: left;
+        height: 90px;
+        padding-top: 5px;
+    }
+
+    .about__DeFiPie {
+        display: block;
+        padding: 20px 500px 150px 450px;
+    }
+
+    .about__DeFiPie img {
+        width: 80px;
+        margin-bottom: -40px;
+    }
+
+    .about__DeFiPie br {
+        padding: 100px 100px 100px 100px;
+    }
+
+    .content {
+        max-width: 420px;
+    }
+
+    .position_list {
+        width: 500px;
+        padding: 10px;
+        box-shadow: 1px 2px 7px 7px rgba(35, 21, 91, 0.1);
+        border-radius: 7px;
+    }
+
+    .position_list img {
+        margin-right: 10px;
+        margin-top: -3px;
+        float: left;
+    }
+
+
+    .thems {
+        font-family: SansSerif;
+
+        color: #23155B;
+        margin: 5px 0;
+    }
+
+    .description {
+        margin-left: 31px;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .text-colored {
+        color: #8053FF;
+    }
+
+    .deFi {
+        color: #23155B;
+        width: 310px;
+        float: left;
+        font-size: 45px;
+    }
+
+    .for-projects {
+        display: block;
+        width: 500px;
+
+    }
+
+    .for-investors {
+        display: block;
+        width: 500px;
+
+    }
+
+    .for-projects p {
+        font-size: 18px;
+        width: 500px;
+        color: #23155B;
+    }
+
+    .answers {
+        color: #23155B;
+        width: 700px;
+        font-size: 45px;
+    }
+
+    .investor {
+        width: 600px;
+    }
+
+    .fundraising {
+        display: var(--display_flex);
+        justify-content: center;
+    }
+
+    .list_items {
+        padding-left: 150px;
+        width: 700px;
+        float: right;
+    }
+
+    .projects {
+        display: var(--display_flex);
+        justify-content: center;
+    }
+
+    .investors {
+        padding-top: 70px;
+        display: var(--display_flex);
+        justify-content: center;
+    }
+
+    .list_items ul {
+        list-style-type: none;
+    }
+
+    .list-number {
+        display: inline-block;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .menu_list {
+        float: right;
+        width: 450px;
+        height: 90px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .menu_list li {
+        margin-left: 10px;
+        padding: 8px 16px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .btn-primary {
+        margin-top: 10px;
+        margin-left: 40px;
+        border-radius: 8px;
+        background: #8053FF;
+        padding: 8px 16px;
+        color: #FFFFFF;
+    }
+
+    .main_content {
+        margin-left: -200px;
+        padding-top: 100px;
+        display: var(--display_flex);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .name_company {
+        position: absolute;
+        top: 34%;
+        left: 35%;
+        font-family: var(--font_Popins);
+        font-size: 64px;
+        color: #23155B;
+    }
+
+    .descriptions {
+        position: absolute;
+        top: 54%;
+        left: 30%;
+        font-family: var(--font_Popins);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #23155B;
+    }
+
+    .option {
+        margin-left: 10px;
+        border: none;
+        padding: 8px 20px;
+        font-family: var(--font_Popins);
+        font-size: 14px;
+        color: #23155B;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        background: none;
+    }
+
+    .main_content .btn_right:hover {
+        background-color: #04AA6D;
+        cursor: pointer;
+    }
+
+    .btn_left {
+        position: absolute;
+        top: 80%;
+        left: 34%;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        background: #8053FF;
+        color: #FFFFFF;
+    }
+
+    .btn_right {
+        padding: 6px 30px;
+        position: absolute;
+        top: 80%;
+        left: 52%;
+        display: flex;
+        justify-content: center;
+        border: 2px solid #8053FF;
+        border-radius: 8px;
+        background: white;
+        color: #8053FF;
+    }
+
+}
+@media (max-width: 1200px) {
+    .body-no-scroll {
+        overflow: hidden;
+    }
+    .function {
+        font-family: var(--font_Popins);
+        display: var(--display_flex);
+        justify-content: center;
+        background: white;
+        position: fixed;
+        z-index: 30;
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+
+
+    }
+    .function li{
+        padding-top: 200px;
+    }
+    a{
+        text-decoration:none;
+        color: black;
+    }
+    .function ul{
+        list-style-type: none;
+    }
+    .hide {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+
+    }
+    .show{
+    }
+    .for-projects {
+        display: block;
+        width: 500px;
+    }
+
+    .for-projects p {
+        font-size: 18px;
+        width: 500px;
+        color: #23155B;
+    }
+
+    .answers {
+        color: #23155B;
+        width: 700px;
+        font-size: 45px;
+    }
+
+    .position left {
+        margin-left: -320px;
+        max-width: 1000px;
+    }
+
+    .pleft {
+        margin-left: -410px;
+        float: left;
+    }
+    .position__investors {
+        width: 1200px;
+    }
+
+
+    .joinToVC h1 {
+        margin-bottom: 50px;
+    }
+
+
+
+    .joinToVC p {
+        font-family: var(--font_Popins);
+        margin-bottom: -50px;
+        width: 400px;
+        color: #FFFFFF;
+        font-size: 52px;
+    }
+
+
+    .text-colored-gray {
+        color: #D4CDEF;
+        font-size: 18px;
+    }
+
+
+    .text-colored {
+        color: #8053FF;
+    }
+    .menu_list ul,
+    .funding ul {
+        list-style-type: none;
+        display: var(--display_flex);
+        float: left;
+    }
+
+    .menu_list li {
+        margin-left: 10px;
+        padding: 8px 16px;
+        font-size: 16px;
+        text-align: left;
+    }
+    .menu_list {
+        float: right;
+        width: 450px;
+        height: 90px;
+        padding: 10px 10px 10px 10px;
+    }
+    .logo {
+        width: 200px;
+        float: left;
+        height: 90px;
+        padding-top: 5px;
+    }
+    .container {
+        width: 1200px;
+        justify-content: flex-start;
+        margin-left: 0px;
+        height: 80px;
+    }
+    .position {
+        position: relative;
+    }
+    header {
+        font-family: var(--font_Popins);
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        width: var(--full_width);
+    }
+    .main_content {
+        width:100%;
+
+        display: var(--display_flex);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .main_content img{
+        width:100%;
+        height: 100%;
+    }
+    .name_company {
+        position: absolute;
+        top: 0%;
+        left: 22%;
+        font-family: var(--font_Popins);
+        font-size: 64px;
+        color: #23155B;
+    }
+    .descriptions {
+        position: absolute;
+        top: 40%;
+        left: 12%;
+        font-family: var(--font_Popins);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #23155B;
+    }
+    .btn_left {
+        top: 70%;
+        left: 25%;
+        width: 170px;
+        height: 46px;
+        border-radius: 8px;
+        background: #8053FF;
+        color: #FFFFFF;
+        border: none;
+    }
+    .btn_right {
+        top: 70%;
+        left: 52%;
+        width: 170px;
+        border: 1px solid #8053FF;
+        background: white;
+        border-radius: 8px;
+        color: #8053FF;
+    }
+
+    .btn-primary {
+        margin-top: 10px;
+        margin-left: 40px;
+        border-radius: 8px;
+        background: #8053FF;
+        padding: 8px 16px;
+        color: #FFFFFF;
+    }
+    .option {
+        display:  var(--display_flex);;
+        justify-content: center;
+        position: absolute;
+        padding: 8px 20px;
+        font-family: var(--font_Popins);
+        font-size: 14px;
+        line-height: 28px;
+
+    }
+    .funding_list {
+        list-style-type: none;
+        padding: 0;
+        display: var(--display_flex);
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .funding_list li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .sponsor {
+        width:100%;
+
+        display: var(--display_flex);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sponsor ul {
+        width: auto;
+        list-style-type: none;
+        display: var(--display_flex);
+    }
+
+    .sponsor img {
+        width: 100px;
+    }
+    .fundraising {
+        width:100%;
+        display: var(--display_flex);
+        /*justify-content: center;*/
+    }
+    .deFi {
+        padding-left: 10px;
+        color: #23155B;
+        width: 310px;
+        float: left;
+        font-size: 45px;
+    }
+    .list_items {
+        width: 50%;
+        float: left;
+    }
+
+    .list_items ul {
+        width: 80%;
+        list-style-type: none;
+    }
+    .list_items li {
+
+        margin-bottom: 20px;
+    }
+    .position_list {
+        padding: 10px;
+        box-shadow: 1px 2px 7px 7px rgba(35, 21, 91, 0.1);
+        border-radius: 7px;
+    }
+    .list-number {
+         display: inline-block;
+         width: 30px;
+         margin-right: 10px;
+     }
+
+
+    .position_list img {
+        margin-right: 10px;
+        margin-top: -3px;
+        float: left;
+    }
+    .projects {
+        padding-bottom: 20px;
+        padding: 10px;
+        display: var(--display_flex);
+        justify-content: center;
+    }
+
+    .position__projects {
+        width: 100%;
+    }
+    .investors {
+padding-bottom: 20px;
+        display: var(--display_flex);
+        justify-content: center;
+    }
+    .about {
+        font-family: var(--font_SansSerif);
+        font-size: 18px;
+        color: #23155B;
+        width: 100%;
+        padding-top: 100px;
+    }
+    .about__img img {
+        margin-left: -17%;
+        border-radius: 40px;
+        float: left;
+    }
+
+    .about__DeFiPie {
+width: 55%;
+        padding-bottom: 200px;
+        float: right;
+    }
+
+    .about__DeFiPie img {
+        width: 80px;
+        margin-bottom: -40px;
+    }
+
+    .about__DeFiPie br {
+        padding-top: 10px;
+    }
+
+    .by_DeFiPie {
+        font-size: 50px;
+        color: #23155B;
+    }
+.left .btn_left {
+        left: 0%;
+    }
+    .left  .btn_right {
+        left: 62%;
+
+    }
+    .forms {
+        display: var(--display_flex);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .joinToVC {
+        margin-bottom: 20px;
+        padding-bottom: 100px;
+    }
+    footer {
+        display: var(--display_flex);
+        flex-direction: column;
+        background: #23155B;
+        margin: -8px;
+        border-radius: 100px 0px 0px;
+        width: 100%;
+    }
+    .text_area {
+
+        margin-left: 100px;
+        color: #D4CDEF;
+        font-size: 15px;
+
+    }
+
+    .text_area form {
+        width: 300px;
+        margin-bottom: 20px;
+        margin-right: 200px;
+    }
+
+    .text_area input {
+        width: 400px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .text_area label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .contacts {
+        margin-top: -20px;
+        display: var(--display_flex);
+        align-self: flex-end;
+
+    }
+
+    .contacts h5 {
+        padding-left: 20px;
+        color: white;
+    }
+    .social {
+        display: var(--display_flex);
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .social_media img {
+
+        width: 35px;
+        margin-left: 20px;
+    }
+
+}

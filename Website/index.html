@@ -1,0 +1,362 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        let counter = 0;
+        const button = document.querySelector('button.btn.btn-primary');
+        if(button){
+            button.addEventListener('click', function () {
+                if (counter == 0) {
+                    ;
+                    document.querySelector('nav.function').classList.remove('hide');
+                    document.querySelector('nav.function').classList.add('show');
+                    document.body.classList.add('body-no-scroll');
+                    counter++;
+                } else {
+
+                    document.querySelector('nav.function').classList.remove('show');
+                    document.querySelector('nav.function').classList.add('hide');
+                    document.body.classList.remove('body-no-scroll');
+                    counter--;
+                }
+            });
+        }});
+</script>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.svg" alt="My Happy SVG"/>
+        </div>
+        <nav class="menu_list">
+            <ul>
+                <li><a href="#">For Projects</a></li>
+                <li><a href="#">For Investors</a></li>
+            </ul>
+            <button class="btn btn-primary">Join Now</button>
+        </nav>
+    </div>
+</header>
+<nav class="function hide">
+    <ul>
+        <li><a href="#">For Projects</a></li>
+        <li><a href="#">For Investors</a></li>
+        <li><a href="#">For Students</a></li>
+    </ul>
+
+</nav>
+<main>
+    <section class="main_content">
+        <div class="position">
+            <img alt="My Happy SVG" src="img/bg.png"/>
+            <h1 class="name_company">Vision Capital</h1>
+            <h2 class="descriptions">The right way to fund and incubate your DeFi startup</h2>
+            <button type="submit" class="btn_left  option">I Need Funding</button>
+            <button type="submit" class="btn_right  option">Become an Investor </b></button>
+        </div>
+    </section>
+    <section class="sponsor">
+        <div class="position">
+            <span class="tittle">In the pipeline</span>
+            <ul>
+                <li><a href="#"><img  src="img/image26.png" alt="Harvard"></a></li>
+                <li><a href="#"><img src="img/image27.png" alt="Microsoft"></a></li>
+                <li><a href="#"><img  src="img/image28.png" alt="Nasa"></a></li>
+                <li><a href="#"><img  src="img/image29.png" alt="Yale"></a></li>
+                <li><a href="#"><img  src="img/image30.png" alt="PeYoneer"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="fundraising">
+        <div class="position">
+            <h2 class="deFi">Traditional Fundraising
+                <span class="text-colored">Doesn't Work</span>
+                in DeFi
+            </h2>
+            <div class="list_items">
+                <ul >
+                    <li>
+                        <div class="position_list">
+                            <h2 class="list-number text-colored">1</h2>
+                            Without a big budget, it's hard to approach venture investors
+                        </div>
+                    </li>
+                    <li>
+                        <div class="position_list">
+                            <h2 class="list-number text-colored">2</h2>
+                            VCs don't care about your DeFi idea – only their gains
+                        </div>
+                    </li>
+                    <li>
+                        <div class="position_list">
+                            <h2 class="list-number text-colored">3</h2>
+                            They force you into selling your tokens at a huge discount…
+                        </div>
+                    </li>
+                    <li>
+                        <div class="position_list">
+                            <h2 class="list-number text-colored">4</h2>
+                            ...Then dump them at the first opportunity
+                        </div>
+                    </li>
+                    <li>
+                        <div class="position_list">
+                            <h2 class="list-number text-colored">5</h2>
+                            Result: your token collapses. Everyone goes home.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="position__projects">
+            <div class="for-projects">
+                <h3 class="text-colored">— For Projects</h3>
+                <h2 class="answers">Vision is the<span class="text-colored"> answer</span></h2>
+                <p>You have an idea, IncuPie has a plan. We offer everything you need to go from an early-stage idea to
+                    a successful exchange listing.</p>
+            </div>
+
+            <ul class="funding_list">
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Decentralized investments</p>
+                            <p class="description">we'll distribute your tokens among our huge and active community</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Access to professional investors </p>
+                            <p class="description">we'll put you in touch with funds and business angels ready to invest
+                                larger sums</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Exchange relations</p>
+                            <p class="description">get better terms when listing your token</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Staking</p>
+                            <p class="description">allow users to stake your tokens on DeFiPie and earn rewards</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Product-market fit analysis</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Detailed tokenomics</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Smart contract audit</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Community-building and social media marketing</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">White Paper, blog, and media content from the best authors</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+
+            </li>
+                <li>
+
+                    <div class="position left">
+                        <button type="submit" class="btn_left option ">I Need Funding</button>
+                        <button type="submit" class="btn_right option ">Learn More </button>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="investors">
+        <div class="position__investors">
+            <div class="for-investors">
+                <h3 class="text-colored">— For Investors</h3>
+                <h2 class="answers investor">Access <span class="text-colored">high-potential </span>DeFi startups
+                    before everyone else</h2>
+            </div>
+
+            <ul class="funding_list">
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Low entry prices on DeFi tokens</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Fully decentralized </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Only vetted projects that passed our due diligence</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">New projects every month</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">High chance of success thanks to our incubation program</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="position_list">
+                        <div class="content">
+                            <img src="img/Frame16.png">
+                            <p class="thems">Yield farming rewards in PIE(<span
+                                    class="text-colored"> up to 100% a year</span>)</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="position left">
+                <button type="submit" class="btn_left option ">Become an Investor</b></button>
+
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__img">
+            <img src="img/image31.jpg" width="400px">
+        </div>
+        <div class="about__DeFiPie">
+            <img src="img/Group3Icon.png" alt="My Happy SVG"/>
+            <h1 class="by_DeFiPie"><b><span class="text-colored">Brought to you</span> <br>by DeFiPie</h1></b>
+            <p>DeFiPie is the first DeFi app to bring together crypto lending, staking, P2P loans, liquidity mining, and
+                trading. We have a strong development and marketing team and an active, constantly growing community.
+            </p>
+            <br> Project incubation is a natural next step: now that we've done it ourselves, we want to help other
+            quality projects to achieve success.
+        </div>
+    </section>
+    <section class="sponsor">
+        <div class="position">
+            <b> <span class="tittle">Brought to you by DeFiPie in partnership with</span></b>
+            <ul>
+                <li><a href="#"><img img src="img/logoo.png" alt="Harvard"></a></li>
+                <li><a href="#"><img img src="img/logo.png" alt="Microsoft"></a></li>
+                <li><a href="#"><img img src="img/logo-1.png" alt="Nasa"></a></li>
+                <li><a href="#"><img img src="img/logo-2.png" alt="Yale"></a></li>
+                <li><a href="#"><img img src="img/logo-3.png" alt="PeYoneer"></a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="forms">
+        <div class="joinToVC">
+            <h1>
+                <p><span class="text-colored">Join </span></p>
+                <p>Vision Capital </p>
+                <p>and get funded</p>
+            </h1>
+            <p><span class="text-colored-gray">We'll get back to you within 24 hours</span></p>
+        </div>
+        <div class="text_area">
+            <form>
+                <label for="name1">How is your project called?</label>
+                <input type="text" id="name1">
+            </form>
+            <form>
+                <label for="name2">Your Email</label>
+                <input type="text" id="name2">
+            </form>
+        </div>
+        <div class="text_area">
+            <form>
+                <label for="name3">Please tell us a few words about the project</label>
+                <input type="text" id="name3">
+            </form>
+            <form>
+                <label for="name4">Telegram name</label>
+                <input type="text" id="name4">
+            </form>
+        </div>
+        <div class="position pleft">
+            <button type="submit" class="btn_left option">Send</button>
+        </div>
+    </div>
+    <div class="social">
+        <div class="social_media">
+            <img src="img/Social.png" alt="Harvard">
+            <img src="img/Social-1.png" alt="Harvard">
+            <img src="img/Social-2.png" alt="Harvard">
+            <img src="img/Socia.png" alt="Harvard">
+
+            <div class="contacts">
+                <h5>hello@visioncapital.com</h5>
+                <h5>Join us on Telegram</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
